@@ -12,3 +12,5 @@ novoANIMAL.cachorro = 'labrador';
 
 console.log(novoANIMAL);
 novoANIMAL.cacacteriticar();
+
+console.log(animais.cachorro);
