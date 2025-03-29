@@ -15,7 +15,15 @@ class Produto {
 
 }
 
-Produto.prototype.cor = 'marron';
+let validade = Symbol();
+
+let codigoProduto = Symbol();
+
+Produto.prototype[validade] = new Date();
+
+Produto.prototype[codigoProduto] = 15006;
+
+
 
 
 let novoProduto = new Produto('café', '500g', new Date(), 14.90 );
@@ -26,6 +34,10 @@ console.log(novoProduto.peso);
 console.log(novoProduto.dta);
 console.log(novoProduto.valor);
 novoProduto.data();
+
+console.log(Produto.prototype[validade]);
+console.log(Produto.prototype[codigoProduto]);
+
 
 
 

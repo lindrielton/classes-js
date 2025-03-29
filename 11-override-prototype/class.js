@@ -15,7 +15,8 @@ class Produto {
 
 }
 
-Produto.prototype.cor = 'marron';
+Produto.prototype.peso = "1000kg";
+Produto.prototype.quantia = '10 fardos'
 
 
 let novoProduto = new Produto('café', '500g', new Date(), 14.90 );
@@ -27,6 +28,8 @@ console.log(novoProduto.dta);
 console.log(novoProduto.valor);
 novoProduto.data();
 
+console.log(Produto.prototype.peso);// com o prototype podemos influenciar na clase pai ou no prototype da classe nova.
+console.log(Produto.prototype.quantia);// adicionando um produto
 
 
 
