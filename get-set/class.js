@@ -15,17 +15,7 @@ class Produto {
 
 }
 
-let validade = Symbol();
 
-let codigoProduto = Symbol();
-
-let codigoBarras = Symbol();
-
-Produto.prototype[validade] = new Date();
-
-Produto.prototype[codigoProduto] = 15006;
-
-Produto.prototype[codigoBarras] = 1234567891011;
 
 
 
@@ -41,9 +31,7 @@ console.log(novoProduto.dta);
 console.log(novoProduto.valor);
 novoProduto.data();
 
-console.log(Produto.prototype[validade]);
-console.log(Produto.prototype[codigoProduto]);
-console.log(Produto.prototype[codigoBarras]);
+
 
 
 
