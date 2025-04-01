@@ -12,6 +12,14 @@ class Produto {
       console.log(`produto na validade  atua ` + new Date());
     }
 
+    get verValor(){
+          return " seu valor é " + this.valor;
+    }
+
+    set alterarValor(valor){
+              return this.valor = valor;;
+    }
+
 
 }
 
@@ -30,6 +38,19 @@ console.log(novoProduto.peso);
 console.log(novoProduto.dta);
 console.log(novoProduto.valor);
 novoProduto.data();
+
+
+
+
+novoProduto.alterarValor = 30;
+
+
+
+console.log(novoProduto.verValor);
+
+
+
+
 
 
 
