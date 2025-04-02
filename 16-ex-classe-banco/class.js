@@ -1,16 +1,16 @@
-class banco {
+class Banco {
   constructor(saldo){
       this.saldo = saldo;
   }
   
   deposito(valor){
-       valor = this.saldo + valor;
-       console.log('seu saldo é ', + valor);
+        this.saldo += valor;
+        return (`seu saldo mudou ${ this.saldo }`);
   }
 
-  saque(val){
-      val = this.saldo - val;
-      console.log('seu saldo é ' + val);
+  saque(valor){
+      this.saldo -= valor;
+      return this.saldo + ' seu saldo foi alterado';
   }
 
 
@@ -18,10 +18,12 @@ class banco {
 
 
 
-let cliente = new banco(5000);
+let cliente = new Banco(5000);
 
-cliente.deposito(1000);
-cliente.saque(2000);
+console.log(cliente.deposito(1000));
+console.log(cliente.saque(2000));
+
+
 
 
 
